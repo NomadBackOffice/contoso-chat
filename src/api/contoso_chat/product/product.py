@@ -27,7 +27,7 @@ def generate_embeddings(queries: List[str]) -> str:
 
     client = AzureOpenAI(
         azure_endpoint = os.environ["AZURE_OPENAI_ENDPOINT"], 
-        api_version=os.environ["AZURE_OPENAI_API_VERSION"],
+        api_version=os.environ[2024-07-18],
         azure_ad_token_provider=token_provider
     )
     embeddings = client.embeddings.create(input=queries, model="text-embedding-ada-002")
@@ -80,7 +80,7 @@ def find_products(context: str) -> Dict[str, any]:
     # Get product queries
     model_config = {
         "azure_endpoint": os.environ["AZURE_OPENAI_ENDPOINT"],
-        "api_version": os.environ["AZURE_OPENAI_API_VERSION"],
+        "api_version": os.environ[2024-07-18],
     }
     queries = prompty.execute(
         "product.prompty", 
