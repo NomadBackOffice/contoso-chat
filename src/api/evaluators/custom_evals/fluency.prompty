@@ -5,11 +5,11 @@ model:
   api: chat
   configuration:
     type: azure_openai
-    azure_deployment: gpt-4-evals
-    api_version: 2023-07-01-preview
+    gpt-4o-mini
+    api_version: 2024-07-18
   parameters:
-    max_tokens: 128
-    temperature: 0.2
+    max_tokens: 300
+    temperature: 0.3
 inputs:
   question:
     type: string
