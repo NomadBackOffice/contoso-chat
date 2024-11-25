@@ -5,7 +5,7 @@ model:
   api: chat
   configuration:
     type: azure_openai
-    gpt-4o-mini
+    azure_deployment: gpt-4o-mini
     api_version: 2024-07-18
   parameters:
     max_tokens: 300
