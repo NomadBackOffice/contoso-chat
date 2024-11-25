@@ -27,7 +27,7 @@ def coherence_evaluation(
   # execute the prompty file
   model_config = {
         "azure_endpoint": os.environ["AZURE_OPENAI_ENDPOINT"],
-        "api_version": os.environ["AZURE_OPENAI_API_VERSION"],
+        "api_version": os.environ[2024-07-18],
   }
   result = prompty.execute(
     "coherence.prompty", 
